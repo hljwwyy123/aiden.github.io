@@ -1,16 +1,27 @@
-title: Aiden的Blog # 站点标题
+title: wu-kan # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  7年前端<br/>
-  山口百惠<br/>
-  奶爸<br/>
-  猫奴<br/>
-  摩托GP<br/>
-  <a href="https://github.com/hljwwyy123">
+  SYSU第5年<br/>
+  水野爱<br/>
+  田宫例四驱车<br/>
+  <a href="mailto:i@wu-kan.cn">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+  <a href="https://github.com/wu-kan">
     <i class="fa-brands fa-github"></i>
   </a>
+  <a href="https://vjudge.net/user/WuK">
+    <i class="fa-solid fa-smile"></i>
+  </a>
+  <a href="https://space.bilibili.com/166390020">
+    <i class="fa-brands fa-bilibili"></i>
+  </a>
+  <a href="https://www.zhihu.com/people/wu.kan/activities">
+    <i class="fa-brands fa-zhihu"></i>
+  </a>
   <br/>
-url: https://edison.fit # 你的域名，例如 https://wu-kan.github.io
+url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
   - scope:
       path: "" # an empty string here means all files in the project
@@ -32,8 +43,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 href: /
               - title: '<i class="fa-solid fa-comment fa-fw"></i> 留言'
                 href: /comments/
+              - title: '<i class="fa-solid fa-archive fa-fw"></i> 归档'
+                href: /archive/
               - title: '<i class="fa-solid fa-tags fa-fw"></i> 标签'
                 href: /tags/
+              - title: '<i class="fa-solid fa-coffee fa-fw"></i> 打赏'
+                href: /merger/
             simple_jekyll_search: # 侧边栏的全站搜索
               enable: true
               full_text_search: false # 可能导致缓慢的搜索和加载
@@ -603,6 +618,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             </a>
             （除特别声明或转载文章外）
             <br/>
+            <i class="fa-solid fa-coffee fa-fw"></i>
+            <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>        
+        
 
 compress_html: # <https://github.com/penibelst/jekyll-compress-html>
   clippings: all
@@ -616,6 +634,7 @@ compress_html: # <https://github.com/penibelst/jekyll-compress-html>
 
 # githubpage上支持的插件见<https://pages.github.com/versions/>
 plugins: # <https://jekyllrb.com/docs/plugins/>
+  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
   - jekyll-default-layout # 为每个markdown自动生成layout
   - jekyll-seo-tag # 为每个页面生成标题
   - jekyll-sitemap # 为站点生成站点地图
@@ -625,12 +644,12 @@ plugins: # <https://jekyllrb.com/docs/plugins/>
 
 remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0 #使用固定版本号以防止主题更新导致站点显示错乱
 
-# readme_index: # 缺失index.md和index.html时，使用README.md代替之
-#   with_frontmatter: true # 支持带有yaml头的README
+readme_index: # 缺失index.md和index.html时，使用README.md代替之
+  with_frontmatter: true # 支持带有yaml头的README
 
-# webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
-#   google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
-#   baidu: szbTSfUGAB
+webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
+  google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
+  baidu: szbTSfUGAB
 
 permalink: pretty
 # timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
