@@ -1,6 +1,5 @@
 title: Aiden的Blog # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  7年前端<br/>
   山口百惠<br/>
   奶爸<br/>
   猫奴<br/>
@@ -41,14 +40,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 <style>
                   #sidebar-search-input {
                     background: none;
+                    outline: none 0;
                     border: 1px solid #e3e3e3;
                     border-radius: 4px;
                     padding: 12px 6px;
                     color: White;
                     width: 100%;
-                  }
-                  #sidbar-search-input:focus-visible {
-                    outline: white 1px
                   }
                   #sidebar-search-results-container {
                     overflow: hidden hidden;
@@ -303,7 +300,18 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
                   font-family: 'Chinese Quote', 'Segoe UI', Roboto, RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif
                 }
-                body {font-weight: 300}
+                body {font-weight: 300;font-size: 16px;word-break: break-word;line-height: 1.74;}
+                input::-webkit-input-placeholder { /* Edge */
+                  color: #e3e3e3;
+                }
+
+                input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                  color: #e3e3e3;
+                }
+
+                input::placeholder {
+                  color: #e3e3e3;
+                }
               </style>
             - | # 修复行内图片默认样式
               <style>
