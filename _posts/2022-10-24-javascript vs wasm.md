@@ -8,7 +8,7 @@ comments: true
 jekyll-theme-WuK:
   default:
     sidebar:
-      open: false
+      open: true
   archive:
     group_by: "%b %Y" # 见<https://liquid.bootcss.com/filters/date/>
     vega_lite: # 显示一个统计图，需要引入 vega-lite
