@@ -7,7 +7,7 @@ Jekyll 的工作方式是，服务器端（对于 github pages，就是 github �
 1. 确保Ruby已经安装 [Mac安装Ruby](https://developer.aliyun.com/article/459167)
 2. 确保bundler已经安装：sudo gem install bundler
 3. 确保Jekyll已经安装，在项目目录下bundle
-4. 在项目目录下bundle exec jekyll serve
+4. 在项目目录下执行 bundle exec jekyll serve
 5. 在浏览器中可通过URL [http://localhost:4000/](http://localhost:4000/) 看到你的网站
 
 
